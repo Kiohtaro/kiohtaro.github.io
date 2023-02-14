@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valentine's Day App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    </head>
+    <body>
+      <div class="banner"></div>
+      <h1>Happy Valentines Day!</h1>
+      <p>I know you're moving on na so I'm just gonna pour out whats left of me x</p>
+      <div class="buttons-container">
+      <button id="chocolate">Chocolate</button>
+      <button id="flower">Flower</button>
+      </div>
+      <div id="message"></div>
+      <div class="gift-image" id="chocolate-image" style="display: hide;">
+        <img src="https://media.tenor.com/JyaXelRuyqcAAAAC/kotarou-gakuen-babysitters.gif" alt="Chocolate GIF" height="350" width="350">
+      </div>
+      <div class="gift-image" id="flower-image" style="display: hide;">
+        <img src="https://media.tenor.com/PJ0ly6Om62sAAAAC/flower-gentleman.gif" alt="Flower GIF" height="350" width="350" >
+      </div>
+
+
+<script>
+      const chocolateButton = document.getElementById("chocolate");
+      const flowerButton = document.getElementById("flower");
+      const chocolateImage = document.getElementById("chocolate-image");
+      const flowerImage = document.getElementById("flower-image");
+      const message = document.getElementById("message");
+      
+      chocolateButton.addEventListener("click", function() {
+        chocolateImage.classList.add("show");
+        flowerImage.classList.add("show");
+        message.innerHTML = "You deserve both <3!";
+        chocolateButton.style.display = "none";
+        flowerButton.style.display = "none";
+      });
+      
+      flowerButton.addEventListener("click", function() {
+        chocolateImage.classList.add("show");
+        flowerImage.classList.add("show");
+        message.innerHTML = "You deserve both <3!";
+        chocolateButton.style.display = "none";
+        flowerButton.style.display = "none";
+      });
+
+    </script>
+    </body>
+  </html>
